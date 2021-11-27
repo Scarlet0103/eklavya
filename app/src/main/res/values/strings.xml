@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Eklavya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Titles-->
+    <string name="first_slide_title">Find new connections</string>
+    <string name="second_slide_title">Grow your network</string>
+    <string name="third_slide_title">Up your knowledge</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">whether you\'re a mentor or a mentee, new connections are found here</string>
+    <string name="second_slide_desc">Not sure if the mentorship is for? don\'t worry!! you can always grow your network by attending the events</string>
+    <string name="third_slide_desc">Talk, mingle and learn something new!! use this app to plan your career ahead and meet new people</string>
+
+    <!--Topic of intrests-->
+    <string-array name="intrests">
+        <item>Career Advice</item>
+        <item>Interview Techniques</item>
+        <item>Portfolio review</item>
+        <item>Resume review</item>
+        <item>General Advice</item>
+    </string-array>
+
+    <!--skills-->
+    <string-array name="skills">
+        <item>Android Development</item>
+        <item>IOS Development</item>
+        <item>Natural Language Processing</item>
+        <item>DevOps</item>
+        <item>Frontend Developer</item>
+        <item>Full-Stack Developer</item>
+        <item>Backend Developer</item>
+        <item>UX Designer</item>
+        <item>UI Developer</item>
+        <item>QA Automation</item>
+        <item>Cloud Developer Engineer</item>
+        <item>Product Manager</item>
+    </string-array>
+
+
+</resources>

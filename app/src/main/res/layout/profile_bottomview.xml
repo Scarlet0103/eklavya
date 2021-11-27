@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottomsheetContainerProfile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageBottom"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="-68dp"
+        android:src="@drawable/profile5"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBottom">
+
+        <TextView
+            android:id="@+id/nameBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Myoui Mina"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/companyBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:text="Data Science Engineer, Apple"
+            android:textColor="@color/text1"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameBottom" />
+
+        <TextView
+            android:id="@+id/followersBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:text="130 Followers"
+            android:textColor="@color/text1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBottom"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBottom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ratingBottom" />
+
+        <TextView
+            android:id="@+id/ratingBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/textview_design2"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="2dp"
+            android:paddingEnd="4dp"
+            android:text="5.0"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:drawableLeftCompat="@drawable/ic_star"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/followersBottom"
+            app:layout_constraintTop_toBottomOf="@+id/companyBottom" />
+
+        <Button
+            android:id="@+id/sendReqBottom"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/buttonShade2"
+            android:fontFamily="@font/roboto_bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="send request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/availBottom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ratingBottom" />
+
+        <android.widget.Button
+            android:id="@+id/availBottom"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_design1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:shadowColor="@android:color/transparent"
+            android:text="see availability"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sendReqBottom"
+            app:layout_constraintTop_toBottomOf="@id/ratingBottom" />
+
+        <Button
+            android:id="@+id/seeReviewsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:shadowColor="@android:color/transparent"
+            android:backgroundTint="@color/cardShade3"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawableTint="@color/text3"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="See all review (24)"
+            android:textAllCaps="false"
+            android:textColor="@color/text3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sendReqBottom" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seeReviewsBottom"
+            app:strokeColor="@color/borderShadelight"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_bold"
+                    android:maxLines="1"
+                    android:text="Best Mentor for Data Science !!"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:maxLines="3"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis ligula vitae nibh mollis gravida. Nullam hendrerit, lorem eget lobortis sollicitudin, metus arcu semper augue, eget facilisis justo enim et leo. Nullam dictum pretium tortor et convallis. Fusce eget lectus quis dolor maximus tempus in vel neque. Mauris sit amet metus at sapien"
+                    android:textColor="@color/text1"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        android:id="@+id/imageMentor"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/square_imageview"
+                        android:src="@drawable/mentee" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.825"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameMentor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:maxLines="1"
+                            android:text="Alice Zuberg"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/companyMentor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:maxLines="1"
+                            android:text="Web Designer, IIT Bombay"
+                            android:textColor="@color/text1"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sendReqV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.15"
+                        android:drawablePadding="2dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="256"
+                        android:textColor="@color/text3"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/ic_heart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

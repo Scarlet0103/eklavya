@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/mentorProfile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageMentor"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="84dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/profile1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7">
+            <TextView
+                android:id="@+id/nameMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:maxLines="1"
+                android:text="name"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/companyMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:maxLines="1"
+                android:text="Google developer"
+                android:textColor="@color/text1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/followersMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:maxLines="1"
+                android:text="140 Followers"
+                android:textColor="@color/text1"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/sendReqV"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_addfriend" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

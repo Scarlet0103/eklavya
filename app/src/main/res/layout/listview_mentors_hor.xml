@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:id="@+id/mentorProfile"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/borderShadelight"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageMentor"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/profile1"/>
+        <TextView
+            android:id="@+id/nameMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="name"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/companyMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text1"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:text="Google developer"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:id="@+id/followersMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text1"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:text="140 Followers"
+            android:layout_marginTop="2dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:text="send request"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:backgroundTint="@color/buttonShade2"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
